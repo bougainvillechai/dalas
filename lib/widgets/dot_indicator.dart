@@ -8,11 +8,11 @@ class DotIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
-      margin: const EdgeInsets.symmetric(horizontal: 5.0),
-      height: isActive ? 12.0 : 8.0,
-      width: isActive ? 12.0 : 8.0,
+      margin: const EdgeInsets.symmetric(horizontal: 4.0),
+      height: isActive ? 10.0 : 7.0,
+      width: isActive ? 10.0 : 7.0,
       decoration: BoxDecoration(
-        color: isActive ? Colors.blue : Colors.grey,
+        color: isActive ? Colors.black : Colors.grey,
         borderRadius: BorderRadius.circular(6.0),
       ),
     );

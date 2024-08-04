@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:maqas/pages/register/register_dashboard.dart';
 
 class Screen3 extends StatelessWidget {
   const Screen3({super.key});
@@ -43,6 +44,21 @@ class Screen3 extends StatelessWidget {
                 child: Image.asset(
                   'lib/assets/wizard3.png',
                   fit: BoxFit.contain,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 25.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xFF1e2e66)
+                  ),
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => RegDashboard()),
+                    );
+                  },
+                  child: Text("Register", style: TextStyle(color: Colors.white),),
                 ),
               ),
             ],
