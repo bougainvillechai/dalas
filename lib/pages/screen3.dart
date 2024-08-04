@@ -14,7 +14,6 @@ class Screen3 extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Title
               Padding(
                 padding: const EdgeInsets.only(top: 50.0),
                 child: Text(
@@ -28,8 +27,7 @@ class Screen3 extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 8.0), // Add space between title and subtitle
-              // Subtitle
+              const SizedBox(height: 8.0),
               Text(
                 "& the rest is on us.",
                 style: GoogleFonts.inter(
@@ -40,8 +38,7 @@ class Screen3 extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 20.0), // Add space between subtitle and image
-              // Spacer widget to push the image to the bottom of the available space
+              const SizedBox(height: 20.0),
               Expanded(
                 child: Image.asset(
                   'lib/assets/wizard3.png',
@@ -54,10 +51,4 @@ class Screen3 extends StatelessWidget {
       ),
     );
   }
-}
-
-void main() {
-  runApp(MaterialApp(
-    home: Screen3(),
-  ));
 }

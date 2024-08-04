@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -16,23 +15,17 @@ class Screen1 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              //lgogo
               Padding(
                 padding: const EdgeInsets.only(top: 40.0),
                 child: Image.asset('lib/assets/maqaslogo.png', color: Colors.black, height: 100,),
               ),
-          
-              //subtitle
               Text('Your tailor, Your dishdasha,\nat the comfort of your home.',
               style: GoogleFonts.inter(
                 textStyle: TextStyle(fontSize: 25,
                 color: Color(0xFF3F4859),)
               ),
               textAlign: TextAlign.center,),
-              //image
               Image.asset('lib/assets/wizard1.png', height: 350,)
-          
-          
             ],
           ),
         ),
