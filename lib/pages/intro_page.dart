@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:maqas/pages/screen2.dart';
+import 'package:maqas/pages/screen3.dart';
 
 import 'package:flutter/material.dart';
 class IntroPage extends StatefulWidget {
@@ -19,7 +19,7 @@ class _IntroPageState extends State<IntroPage> {
         context,
         PageRouteBuilder(
           transitionDuration: const Duration(seconds: 1),
-          pageBuilder: (context, animation, secondaryAnimation) => const Screen2(),
+          pageBuilder: (context, animation, secondaryAnimation) => const Screen3(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             const begin = Offset(1.0, 0.0); // Slide from right to left
             const end = Offset.zero;
