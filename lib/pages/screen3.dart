@@ -11,12 +11,9 @@ class Screen3 extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            mainAxisAlignment:
-                MainAxisAlignment.center, // Center the content vertically
-            crossAxisAlignment: CrossAxisAlignment
-                .start, // Align the content to the start horizontally
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-            
               // Title
               Text(
                 "Complete your order",
@@ -28,7 +25,7 @@ class Screen3 extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 8.0), // Add space between title and subtitle
+              const SizedBox(height: 8.0), // Add space between title and subtitle
               // Subtitle
               Text(
                 "& the rest is on us.",
@@ -37,17 +34,17 @@ class Screen3 extends StatelessWidget {
                     color: Color(0xFF3F4859),
                     fontWeight: FontWeight.w400,
                     fontSize: 20,
-                    
                   ),
                 ),
               ),
-              const SizedBox(
-                  height: 20.0), // Add space between subtitle and image
+              const SizedBox(height: 20.0), // Add space between subtitle and image
+              // Spacer widget to push the image to the bottom of the available space
               Expanded(
                 child: Image.asset(
                   'lib/assets/wizard3.png',
+                  fit: BoxFit.contain,
                 ),
-              )
+              ),
             ],
           ),
         ),
