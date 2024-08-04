@@ -15,13 +15,16 @@ class Screen3 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               // Title
-              Text(
-                "Complete your order",
-                style: GoogleFonts.inter(
-                  textStyle: const TextStyle(
-                    color: Color(0xFF3F4859),
-                    fontWeight: FontWeight.w700,
-                    fontSize: 25,
+              Padding(
+                padding: const EdgeInsets.only(top: 50.0),
+                child: Text(
+                  "Complete your order",
+                  style: GoogleFonts.inter(
+                    textStyle: const TextStyle(
+                      color: Color(0xFF3F4859),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 25,
+                    ),
                   ),
                 ),
               ),
