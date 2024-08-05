@@ -40,8 +40,21 @@ class Screen2 extends StatelessWidget {
               ],
             ),
           ),
-          Expanded(
-            child: Image.asset('lib/assets/wizard2.png', ),
+              Expanded(
+            child: Center(
+              child: ClipRect(
+                child: AspectRatio(
+                  aspectRatio: 1.0, // Adjust the aspect ratio to your image's aspect ratio
+                  child: Transform.rotate(
+                    angle: 25 * 3.141592653589793238 / 180, // Rotate 25 degrees
+                    child: FittedBox(
+                      fit: BoxFit.cover, // Cover the entire available space
+                      child: Image.asset('lib/assets/wizard2.png'),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ),
         ],
       ),
